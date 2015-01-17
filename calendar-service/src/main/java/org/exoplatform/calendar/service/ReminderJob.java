@@ -82,7 +82,7 @@ public class ReminderJob extends MultiTenancyJob {
             message = new Message();
             message.setMimeType(MediaType.TEXT_HTML);
             message.setTo(to);
-            message.setSubject("[reminder] eXo calendar notify mail !");
+            message.setSubject("[recordatori] esdeveniment al calendari!");
             message.setBody(reminder.getProperty(Utils.EXO_DESCRIPTION).getString());
             message.setFrom(jdatamap.getString("account"));
             if (isRepeat) {
